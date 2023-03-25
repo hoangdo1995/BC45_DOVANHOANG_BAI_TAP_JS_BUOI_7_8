@@ -1,19 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bài tập buổi 7-8</title>
     <!-- boostrap css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
+
 <body>
-    
+    <header class="container text-center my-3 bg-success-subtle p-4 rounded-3 shadow">
+        <h3 class="text-danger-emphasis fs-2">ỨNG DỤNG QUẢN LÝ MẢNG</h3>
+    </header>
+    <section class="container my-carousel mt-5">
+        <p>Đây là chương trình quản lý mảng các số người dùng nhập vào!</p>
+    </section>
+    <section class="content container mt-3">
+        <div class="form-input">
+            <label for="nhap-so">Hãy nhập vào dãy số nguyên của bạn (các số các nhau bằng space ' '):</label>
+            <input type="text" class="form-control my-3 d-inline-block w-75" id="nhap-so">
+            <button class="btn btn-success mx-3" id="addNumber">Thêm</button>
+            <button class="btn btn-warning" id="resetNumber">Reset</button>
+        </div>
+        <div class="bg-warning-subtle p-3 rounded-3">
+            <p>Mảng của bạn là: [<span id="hien-thi-mang"></span>]</p>
+        </div>
+    </section>
+    <section class="container infor p-3 mt-4 bg-success-subtle rounded-3">
+        <div class="row">
+            <div class="col-6">
+                <p>Tổng các số dương trong mảng :<span id="tong-so-duong"></span></p>
+                <p>Số lượng số dương trong mảng: <span id="so-luong-so-duong"></span></p>
+            </div>
+            <div class="col-6">
+                <p>Số nhở nhất trong mảng: <span id="so-suong-min"></span></p>
+                <p>Số dương nhỏ nhất trong mảng: <span id="so-duong-min"></span></p>
+                <p>Số chẳn cuối cùng trong mảng: <span id="so-chan-last"></span></p>
+            </div>
+        </div>
+        <div class="doi-vi-tri">
+            <p>Đổi vị tri hai phần tử</p>
+            <span>Vị trí 1:</span>
+            <input type="number" id="vi-tri-1">
+            <span class="ms-3">Vị trí 2:</span>
+            <input type="number" id="vi-tri-2">
+            <button class="btn btn-success ms-3">Đổi vị trí</button>
+        </div>
+        <div class="my-4">
+            <span class="fw-bold">Sắp xếp mảng theo thứ tự: </span>
+            <button class="btn btn-info mx-3">Tăng dần</button>
+            <button class="btn btn-info">Giảm dần</button>
+        </div>
+        <div class="nhap-so-thuc my-3">
+            <p>Nhập thêm mảng số thực:</p>
+            <input type="text" id="mang-so-thuc" class="form-control w-75 d-inline-block me-4">
+            <button class="btn btn-success">Thêm</button>
+        </div>
+        <div class="thanh-phan-mang">
+            <p>Thành phần của mảng:</p>
+            <span class="bg-warning">Số âm</span>
+            <!-- xỬ LÝ IN RA BIỂU ĐỒ -->
+            <span id="charAm" class="bg-danger border-0 rounded-0"></span>
+            <span id="charDuong" class="bg-success border-0 rounded-0"></span>
+            <span class="bg-success">Số dương</span>
+        </div>
+
+    </section>
 
 
     <!-- boostrap js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
+    <script src="./utilities/arrayAnalysis.js"></script>
     <script src="./js/main.js"></script>
 </body>
+
 </html>

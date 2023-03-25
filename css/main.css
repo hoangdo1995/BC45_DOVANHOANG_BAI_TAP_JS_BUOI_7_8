@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.my-carousel{
+    border-radius: 40px 0 40px 40px;
+    border: 10px solid rgb(62, 221, 211);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.infor p{
+    font-weight: 600;
+    color: rgb(8, 19, 26);
+}
+.thanh-phan-mang span{
+    border: 1px solid rgb(16, 189, 120);
+    border-radius: 4px;
+    padding: 10px;
+}
