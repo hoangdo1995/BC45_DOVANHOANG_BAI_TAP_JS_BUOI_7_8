@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Oswald:wght@300;400;600;700&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@100;300;400;500;700;900&family=Volkhov:wght@400;700&display=swap" rel="stylesheet">
+<!-- fontawesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <!-- main css -->
     <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -39,7 +41,7 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-warning-subtle p-3 rounded-3 mt-3">
+            <div class="p-3 rounded-3 mt-3">
                 <p>Mảng của bạn nhập vào là:</p>
                 <p class="fs-3 text-center text-warning">[<span id="hien-thi-mang" class="fs-3"></span>]</p>
             </div>
@@ -50,12 +52,14 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-taskStart" aria-expanded="false" aria-controls="flush-taskStart">
-                            Tổng số dương
+                            <span class="index">1</span>Tổng số dương
                         </button>
                     </h2>
                     <div id="flush-taskStart" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">
-                            <p>Tổng các số dương trong mảng: <span id="tong-so-duong"></span></p>
+                            <div class="body-content">
+                                <p><i class="fa fa-hand-point-right"></i>Tổng các số dương trong mảng: <span id="tong-so-duong"></span></p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -63,12 +67,12 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-taskOne" aria-expanded="false" aria-controls="flush-taskOne">
-                            Đếm số dương
+                            <span class="index">2</span>Đếm số dương
                         </button>
                     </h2>
                     <div id="flush-taskOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">
-                            <p>Số lượng số dương trong mảng: <span id="so-luong-so-duong"></span></p>
+                            <div class="body-content"><p><i class="fa fa-hand-point-right"></i>Số lượng số dương trong mảng: <span id="so-luong-so-duong"></span></p></div>
                         </div>
                     </div>
                 </div>
@@ -76,12 +80,14 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-taskTwo" aria-expanded="false" aria-controls="flush-taskTwo">
-                            Tìm số nhỏ nhất
+                            <span class="index">3</span>Tìm số nhỏ nhất
                         </button>
                     </h2>
                     <div id="flush-taskTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">
-                            <p>Số nhỏ nhất trong mảng: <span id="so-min"></span></p>
+                            <div class="body-content">
+                                <p><i class="fa fa-hand-point-right"></i>Số nhỏ nhất trong mảng: <span id="so-min"></span></p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -89,12 +95,14 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-taskThree" aria-expanded="false" aria-controls="flush-taskThree">
-                            Tìm số dương nhỏ nhất
+                            <span class="index">4</span>Tìm số dương nhỏ nhất
                         </button>
                     </h2>
                     <div id="flush-taskThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">
-                            <p>Số dương nhỏ nhất trong mảng: <span id="so-duong-min"></span></p>
+                            <div class="body-content">
+                                <p><i class="fa fa-hand-point-right"></i>Số dương nhỏ nhất trong mảng: <span id="so-duong-min"></span></p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -102,12 +110,14 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-taskFour" aria-expanded="false" aria-controls="flush-taskFour">
-                            Tìm số chẳn cuối cùng
+                            <span class="index">5</span>Tìm số chẳn cuối cùng
                         </button>
                     </h2>
                     <div id="flush-taskFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">
-                            <p>Số chẳn cuối cùng trong mảng: <span id="so-chan-last"></span></p>
+                            <div class="body-content">
+                                <p><i class="fa fa-hand-point-right"></i>Số chẳn cuối cùng trong mảng: <span id="so-chan-last"></span></p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -115,19 +125,21 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-taskFive" aria-expanded="false" aria-controls="flush-taskFive">
-                            Đổi chổ
+                            <span class="index">6</span>Đổi chổ
                         </button>
                     </h2>
                     <div id="flush-taskFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">
-                            <div class="doi-vi-tri">
-                                <p>Đổi vị tri hai phần tử</p>
-                                <span>Vị trí 1:</span>
-                                <input type="number" id="vi-tri-1" class="text-center">
-                                <span class="ms-3">Vị trí 2:</span>
-                                <input type="number" id="vi-tri-2" class="text-center">
-                                <button class="btn btn-success ms-3" id="doiViTri">Đổi vị trí</button>
-                            </div>
+                            <div class="body-content">
+                                <div class="doi-vi-tri">
+                                    <p>Đổi vị tri hai phần tử</p>
+                                    <span>Vị trí 1:</span>
+                                    <input type="number" id="vi-tri-1" class="text-center">
+                                    <span class="ms-3">Vị trí 2:</span>
+                                    <input type="number" id="vi-tri-2" class="text-center">
+                                    <button class="btn btn-success ms-3" id="doiViTri">Đổi vị trí</button>
+                                </div>
+                            </div>                         
                         </div>
                     </div>
                 </div>
@@ -135,16 +147,18 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-taskSix" aria-expanded="false" aria-controls="flush-taskSix">
-                            Sắp xếp
+                            <span class="index">7</span>Sắp xếp
                         </button>
                     </h2>
                     <div id="flush-taskSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">
-                            <div class="my-4">
-                                <span class="fw-bold">Sắp xếp mảng theo thứ tự: </span>
-                                <button class="btn btn-info mx-3" id="tang-dan">Tăng dần</button>
-                                <button class="btn btn-info" id="giam-dan">Giảm dần</button>
-                            </div>
+                            <div class="body-content">
+                                <div class="my-4">
+                                    <span class="fw-bold">Sắp xếp mảng theo thứ tự: </span>
+                                    <button class="btn btn-info mx-3" id="tang-dan">Tăng dần</button>
+                                    <button class="btn btn-info" id="giam-dan">Giảm dần</button>
+                                </div>
+                            </div> 
                         </div>
                     </div>
                 </div>
@@ -152,44 +166,14 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-taskSeven" aria-expanded="false" aria-controls="flush-taskSeven">
-                            Tìm số nguyên đầu tiên
+                            <span class="index">8</span>Tìm số nguyên tố đầu tiên
                         </button>
                     </h2>
                     <div id="flush-taskSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">
-                            <button class="btn btn-success my-2" id="tim-so-nguyen-to">Tìm sô nguyên tố đâu tiên</button>
-                            <p>Số nguyên tố đâu tiên trong mảng đã nhập là: <span id="so-nguyen-to-dau"></span></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-taskEight" aria-expanded="false" aria-controls="flush-taskEight">
-                            Nhập mảng số thực
-                        </button>
-                    </h2>
-                    <div id="flush-taskEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <div class="nhap-so-thuc my-3">
-                                <p>Nhập vào mảng số thực:</p>
-                                <div class="row">
-                                    <div class="col-8">
-                                        <input type="text" id="mang-so-thuc" class="form-control d-inline-block me-4">
-                                        <p id="error-input-so-thuc" class="text-danger text-end">!!bạn đã nhập sai định dạng.</p>
-                                    </div>
-                                    <div class="col-4">
-                                        <button class="btn btn-success" id="them-mang-so-thuc">Thêm</button>
-                    
-                                    </div>
-                                </div>
-                    
-                                <div class="my-3">
-                                    <p>Mảng số vừa nhập:</p>
-                                    <div class='bg-warning w-75 text-center fs-3 my-3'>[<span id="mang-so-thuc-output"></span>]</div>
-                                    <button class="btn btn-success" id="dem-so-nguyen">Đếm số số nguyên</button>
-                                    <p>Số số nguyên trong mảng vừa nhập là: <span id="so-so-nguyen"></span></p>
-                                </div>
+                            <div class="body-content">
+                                <button class="btn btn-success my-2" id="tim-so-nguyen-to">Tìm sô nguyên tố đâu tiên</button>
+                            <p><i class="fa fa-hand-point-right"></i>Số nguyên tố đâu tiên trong mảng đã nhập là: <span id="so-nguyen-to-dau"></span></p>
                             </div>
                         </div>
                     </div>
@@ -197,18 +181,55 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-taskEight" aria-expanded="false" aria-controls="flush-taskEight">
+                            <span class="index">9</span>Nhập mảng số thực
+                        </button>
+                    </h2>
+                    <div id="flush-taskEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="body-content">
+                                <div class="nhap-so-thuc my-3">
+                                    <p>Nhập vào mảng số thực:</p>
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <input type="text" id="mang-so-thuc" class="form-control d-inline-block me-4">
+                                            <p id="error-input-so-thuc" class="text-danger text-end">!!bạn đã nhập sai định dạng.</p>
+                                        </div>
+                                        <div class="col-4">
+                                            <button class="btn btn-success" id="them-mang-so-thuc">Thêm</button>
+                        
+                                        </div>
+                                    </div>
+                        
+                                    <div class="my-3">
+                                        <p>Mảng số vừa nhập:</p>
+                                        <div class='bg-warning w-75 text-center fs-3 my-3'>[<span id="mang-so-thuc-output"></span>]</div>
+                                        <button class="btn btn-success" id="dem-so-nguyen">Đếm số số nguyên</button>
+                                        <p><i class="fa fa-hand-point-right"></i>Số số nguyên trong mảng vừa nhập là: <span id="so-so-nguyen"></span></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-taskNice" aria-expanded="false" aria-controls="flush-taskNice">
-                            Tìm số nguyên đầu tiên
+                            <span class="index">10</span>So sánh số lượng số âm và dương
                         </button>
                     </h2>
                     <div id="flush-taskNice" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">
-                            <div class="thanh-phan-mang">
-                                <p>Thành phần của mảng:</p>
-                                <span class="border-0">Số âm</span>
-                                <!-- xỬ LÝ IN RA BIỂU ĐỒ -->
-                                <span id="charAm" class=""></span><span id="charDuong" class=""></span>
-                                <span class="border-0">Số dương</span>
+                            <div class="body-content">
+                                <div class="thanh-phan-mang">
+                                    <p>Thành phần của mảng:</p>
+                                    <span class="border-0 bg-warning">Số âm</span>
+                                    <!-- xỬ LÝ IN RA BIỂU ĐỒ -->
+                                    <span id="charAm" class=""></span><span id="charDuong" class=""></span>
+                                    <span class="border-0 bg-success">Số dương</span>
+                                </div>
                             </div>
                         </div>
                     </div>

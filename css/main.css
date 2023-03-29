@@ -23,12 +23,19 @@ body>.container{
 
 .my-carousel{
     border-radius: 40px 0 40px 40px;
-    border: 10px solid rgb(62, 221, 211);
+    border: 10px solid rgb(56, 118, 212);
     padding: 20px;
     font-size: 30px;
     text-align: center;
     backdrop-filter: blur(10px) ;
     margin-bottom: 50px;
+    color: rgb(254, 254, 254);
+}
+
+.content>div:last-of-type{
+    backdrop-filter: blur(5px);
+    color: white;
+    border: 1px solid rgb(191, 238, 22);
 }
 
 #error-input{
@@ -41,9 +48,22 @@ body>.container{
 #error-input-so-thuc{
     display: none;
 }
-.infor p{
-    font-weight: 600;
-    color: rgb(8, 19, 26);
+
+#accordionFlushExample .accordion-item{
+    background-color: transparent;
+}
+#accordionFlushExample .accordion-item .accordion-body{
+    background-color: rgba(255, 255, 255, 0.41);
+    color:white;
+}
+#accordionFlushExample .accordion-item:first-of-type .accordion-header button{
+    border-radius: 10px 10px 0 0;
+}
+#accordionFlushExample .accordion-item:last-of-type .accordion-body,#accordionFlushExample .accordion-item:last-of-type .accordion-header button{
+    border-radius: 0 0 10px 10px;
+}
+#accordionFlushExample .accordion-item:last-of-type .accordion-header button:focus{
+    border-radius: 0;
 }
 .thanh-phan-mang span{
     border: 1px solid rgb(16, 189, 120);
@@ -67,3 +87,26 @@ body>.container{
 #charDuong{
     background-color: green;
 }
+.index{
+    border: 2px solid rgb(133, 211, 220);
+    font-size: 20px;
+    line-height: 20px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    margin-right: 20px;
+    background-color: rgb(105, 246, 190);
+    color: white;
+}
+.body-content{
+    margin: 8px auto;
+    padding: 20px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(0, 255, 255, 0.107);
+    border-radius: 10px;
+}
+.fa.fa-hand-point-right{
+    color: rgb(163, 208, 18);
+    margin-right: 5px;
+}
+

@@ -108,6 +108,9 @@ function validateNumberArray(strArr){
         if(isNaN(strArr[i])){
             return false;
         }
+        if((strArr[i]) === ''){
+            return false;
+        }
     }
     return true;
 }
